@@ -13,5 +13,11 @@ def caching_fibonacci():
             return cache[n]
     return fibonacci
 
+# Отримуємо функцію fibonacci
+fib = caching_fibonacci()
+
+#Задаємо число
 n = 10
-print(f"Fibonacci number for {n} is {caching_fibonacci()(n)}")
+
+# Використовуємо функцію fibonacci для обчислення чисел Фібоначчі для n
+print(f"Fibonacci number for {n} is {fib(n)}")
